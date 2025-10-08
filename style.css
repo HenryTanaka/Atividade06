@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #004080, #0066cc);
+    color: white;
+}
+
+header h1,
+header p {
+    text-align: center;
+}
+
+header p {
+    margin-top: -10px;
+    color: #48a3ff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #0066cc;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("campus.jpg") center/cover no-repeat;
+    filter: blur(6px) brightness(0.7);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.banner h2 {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 15px 35px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-right: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+li a {
+    color: #0066cc;
+    padding: 10px 15px;
+    border: 2px solid #0066cc;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0066cc;
+    color: white;
+    transition: 0.1s all;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #48a3ff;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 150px;
+}
+
+.submenu {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.submenu a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.submenu a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+table { /* Define um estilo para a tabela*/
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0066cc;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+article { /*Define um estilo para as partes de Carreiras, Noticias recenetes e eventos futuros da pagina*/
+    margin-bottom: 25px;
+    padding: 10px 15px;
+    border-left: 4px solid #0066cc;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #004080;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+details {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+details summary { /*Define o estilo das perguntas frequentes*/
+    font-weight: bold;
+    color: #0066cc;
+    cursor: pointer;
+}
+
+details[open] {
+    background-color: #eef6ff;
+    border-color: #48a3ff;
+}
+
+details p {
+    margin-top: 10px;
+    color: #333;
+}
+
+#contatos { /*Define o estilo da seção fale conosco*/
+    background-color: white;
+    width: 800px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#contatos h2 {
+    color: #004080;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contatos form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contatos label {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+}
+
+#contatos input[type="text"],
+#contatos input[type="email"],
+#contatos textarea {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+#contatos input[type="text"]:focus,
+#contatos input[type="email"]:focus,
+#contatos textarea:focus {
+    border-color: #48a3ff;
+    background-color: #eef6ff;
+    outline: none;
+}
+
+/* Botão de envio */
+#contatos input[type="submit"] {
+    width: 160px;
+    padding: 12px;
+    margin: 10px auto 0 auto;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contatos input[type="submit"]:hover {
+    background-color: #004080;
+    transform: scale(1.03);
+}
+
+#contatos input[type="submit"]:active {
+    background-color: #003366;
+    transform: scale(0.97);
+}
+
+/* Ajustes do textarea */
+#contatos textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: Arial, sans-serif;
+}
